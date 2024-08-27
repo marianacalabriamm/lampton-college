@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lampton College</title>
-    <link rel="stylesheet" href="global-lampton-styles.css">
+    <!-- Global Lampton styles -->
+    <link rel="stylesheet" href="styles/global-lampton-styles.css">
+    <!-- Custom common styles -->
+    <link rel="stylesheet" href="styles/custom-common-styles.css">
+    <!-- Custom styles for each partial -->
+    <!-- Stat Block -->
+    <link rel="stylesheet" href="styles/partials/stat-block.css">
+    <!-- Callout Block -->
+    <link rel="stylesheet" href="styles/partials/callout-block.css">
 </head>
-<body>
-    <section>
-        <div>
-            <h2>Discover the Possibilities of a College Education</h2>
-            <p>At Lambton College, we offer a wide range of programs and resources to help you succeed. Whether you're interested in business, technology, or the arts, our dedicated faculty and state-of-the-art facilities will provide you with the skills and knowledge you need to thrive in your chosen field. With a focus on hands-on learning and real-world experience, you'll graduate ready to make an impact in the workforce.</p>
-            <div>
-                <a href="#">Apply Now</a>
-                <a href="#">Contact Us</a>
-            </div>
-        </div>
-        <div>
-            <div>
-                <h3>100s</h3>
-                <p>Of career options</p>
-            </div>
-            <div>
-                <h3>1.5M+</h3>
-                <p>Available in scholarships and bursaries</p>
-            </div>
-            <div>
-                <h3>28.1</h3>
-                <p>Average student to teacher ratio</p>
-            </div>
-            <div>
-                <h3>81.9%</h3>
-                <p>of our graduates find employment</p>
-            </div>
-        </div>
+<body class="container-fluid"> <!-- this class is used on the Lampton site -->
+    <section class="row page-content m-section"> <!-- these classes are used on the Lampton site -->
+        <div class="col-md-12" id="custom-blocks-wrapper"></div> <!-- this class is used on the Lampton site -->
     </section>
+
+    <script>
+        async function loadPartial(url, targetId) {
+            const response = await fetch(url);
+            const html = await response.text();
+            const wrapper = document.getElementById(targetId);
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = html;
+
+            while (tempDiv.firstChild) {
+                wrapper.appendChild(tempDiv.firstChild);
+            }
+        }
+
+        loadPartial('partials/stat-block.html', 'custom-blocks-wrapper');
+        loadPartial('partials/callout-block.html', 'custom-blocks-wrapper');
+    </script>
 </body>
 </html>
