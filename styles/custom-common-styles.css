@@ -1,0 +1,42 @@
+:root {
+  --blue: #0076a8;
+  --yellow: #ffd000;
+}
+
+/* New button variation - white */
+html .btn-white {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff !important;
+}
+
+html .btn-white:hover {
+  background-color: var(--blue);
+  color: #fff !important;
+}
+
+html .btn-white > span[class*="arrow-double-large"]:before {
+  color: var(--blue);
+}
+
+a.btn-white:hover > span[class*="arrow-double-large"]:after,
+button.btn-white:hover > span[class*="arrow-double-large"]:after {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+a.btn-white:hover > span[class*="arrow-double-large"]:after,
+button.btn-white:hover > span[class*="arrow-double-large"]:after {
+  color: var(--yellow);
+}
+a.btn-white:not(:hover) > span[class*="arrow-double-large"]:after,
+button.btn-white:not(:hover) > span[class*="arrow-double-large"]:after {
+  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+a.btn-white:not(:hover) > span[class*="arrow-double-large"]:after,
+button.btn-white:not(:hover) > span[class*="arrow-double-large"]:after {
+  color: unset !important; /* same as in global styles */
+}
+
+html .btn-custom {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
