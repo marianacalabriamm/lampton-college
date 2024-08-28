@@ -1,0 +1,32 @@
+﻿@font-face {
+    font-family: 'Weissenhof-Grotesk-Regular';
+    src: url('WeissenhofGroteskW03-Rg.eot'); /* IE9 compatibility modes */
+    src: url('WeissenhofGroteskW03-Rg.eot?#iefix') format('embedded-opentype'), /* old IE 6-8 */
+    url('WeissenhofGroteskW03-Rg.woff2') format('woff2'), /* very modern browsers */
+    url('WeissenhofGroteskW03-Rg.woff') format('woff'), /* modern browsers */
+    url('WeissenhofGroteskW03-Rg.ttf') format('truetype'); /* safari, android, ios */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Weissenhof-Grotesk-Medium';
+    src: url('WeissenhofGroteskW03-Medium.eot');
+    src: url('WeissenhofGroteskW03-Medium.eot?#iefix') format('embedded-opentype'), 
+        url('WeissenhofGroteskW03-Medium.woff2') format('woff2'), 
+        url('WeissenhofGroteskW03-Medium.woff') format('woff'), 
+        url('WeissenhofGroteskW03-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Weissenhof-Grotesk-Bold';
+    src: url('WeissenhofGroteskW03-Bold.eot');
+    src: url('WeissenhofGroteskW03-Bold.eot?#iefix') format('embedded-opentype'), 
+        url('WeissenhofGroteskW03-Bold.woff2') format('woff2'), 
+        url('WeissenhofGroteskW03-Bold.woff') format('woff'), 
+        url('WeissenhofGroteskW03-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

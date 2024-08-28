@@ -1,0 +1,32 @@
+﻿@font-face {
+    font-family: 'Meta-Serif-Book';
+    src: url('MetaSerifW07-Book.eot');
+    src: url('MetaSerifW07-Book.eot?#iefix') format('embedded-opentype'), 
+        url('MetaSerifW07-Book.woff2') format('woff2'), 
+        url('MetaSerifW07-Book.woff') format('woff'), 
+        url('MetaSerifW07-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Meta-Serif-Italic';
+    src: url('MetaSerifW07-BookItalic.eot');
+    src: url('MetaSerifW07-BookItalic.eot?#iefix') format('embedded-opentype'), 
+        url('MetaSerifW07-BookItalic.woff2') format('woff2'), 
+        url('MetaSerifW07-BookItalic.woff') format('woff'), 
+        url('MetaSerifW07-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Meta-Serif-Bold';
+    src: url('MetaSerifW07-Bold.eot');
+    src: url('MetaSerifW07-Bold.eot?#iefix') format('embedded-opentype'), 
+        url('MetaSerifW07-Bold.woff2') format('woff2'), 
+        url('MetaSerifW07-Bold.woff') format('woff'), 
+        url('MetaSerifW07-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

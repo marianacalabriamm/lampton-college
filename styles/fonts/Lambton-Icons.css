@@ -1,0 +1,483 @@
+﻿/* Lambton Icon font */
+
+/* Usage: <span class="icon-solid icon-calendar" aria-hidden="true"></span>
+
+	Use "aria-hidden" on the span wrapper so screen readers don't read out
+	random characters. If the icon is a standalone and not decorating any other text (for
+	example, the Facebook icon in the footer) then additional text should be added
+	and wrapped in an element with "sr-only" so that screen reader users can
+	still access the content.
+
+*/
+
+@font-face {
+    font-family: 'Lambton-Icons-Solid';
+    src: url('LambtonIconsBlackSolid.eot');
+    src: url('LambtonIconsBlackSolid.eot?#iefix') format('embedded-opentype'), url('LambtonIconsBlackSolid.woff2') format('woff2'), url('LambtonIconsBlackSolid.woff') format('woff'), url('LambtonIconsBlackSolid.ttf') format('truetype'), url('LambtonIconsBlackSolid.svg#LambtonIconsBlackSolid') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Lambton-Icons-Outline';
+    src: url('LambtonIconsBlackOutline.eot');
+    src: url('LambtonIconsBlackOutline.eot?#iefix') format('embedded-opentype'), url('LambtonIconsBlackOutline.woff2') format('woff2'), url('LambtonIconsBlackOutline.woff') format('woff'), url('LambtonIconsBlackOutline.ttf') format('truetype'), url('LambtonIconsBlackOutline.svg#LambtonIconsBlackOutline') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'XIcon';
+    src: url('XIcon.eot');
+    src: url('XIcon.eot?#iefix') format('embedded-opentype'), url('XIcon.ttf?') format('truetype'), url('XIcon.woff') format('woff'), url('XIcon.svg?#XIcon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.icon-font-solid,
+.icon-font-outline {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    speak: none; /* avoid screenreaders reading the characters */
+    position: relative;
+    top: 2px;
+}
+
+.icon-font-solid {
+    font: normal normal normal 26px/1 'Lambton-Icons-Solid';
+}
+
+.icon-font-outline {
+    font: normal normal normal 26px/1 'Lambton-Icons-Outline';
+}
+/* colours */
+.icon-font-yellow {
+    color: #ffd100 !important;
+}
+
+.icon-font-light-blue {
+    color: #00a9e0 !important;
+}
+
+.icon-font-medium-blue {
+    color: #0076a8 !important;
+}
+
+.icon-font-dark-blue {
+    color: #005587 !important;
+}
+
+.icon-font-white {
+    color: white !important;
+}
+
+.icon-font-black {
+    color: black !important;
+}
+
+.icon-font-green {
+    color: #00ab84 !important;
+}
+
+.icon-font-red {
+    color: #EA2328 !important;
+}
+/* icons */
+.icon-font-calendar:before {
+    content: '`';
+}
+
+.icon-font-calendar-jan:before {
+    content: '1';
+}
+
+.icon-font-calendar-feb:before {
+    content: '2';
+}
+
+.icon-font-calendar-mar:before {
+    content: '3';
+}
+
+.icon-font-calendar-apr:before {
+    content: '4';
+}
+
+.icon-font-calendar-may:before {
+    content: '5';
+}
+
+.icon-font-calendar-jun:before {
+    content: '6';
+}
+
+.icon-font-calendar-jul:before {
+    content: '7';
+}
+
+.icon-font-calendar-aug:before {
+    content: '8';
+}
+
+.icon-font-calendar-sep:before {
+    content: '9';
+}
+
+.icon-font-calendar-oct:before {
+    content: '0';
+}
+
+.icon-font-calendar-nov:before {
+    content: '-';
+}
+
+.icon-font-calendar-dec:before {
+    content: '=';
+}
+
+.icon-font-house:before {
+    content: 'q';
+}
+
+.icon-font-search:before {
+    content: 'w';
+}
+
+.icon-font-preferences:before {
+    content: 'e';
+}
+
+.icon-font-settings:before {
+    content: 'r';
+}
+
+.icon-font-cart:before {
+    content: 't';
+}
+
+.icon-font-mail:before {
+    content: 'y';
+}
+
+.icon-font-printer:before {
+    content: 'u';
+}
+
+.icon-font-lock:before {
+    content: 'i';
+}
+
+.icon-font-identity:before {
+    content: 'o';
+}
+
+.icon-font-secure:before {
+    content: 'p';
+}
+
+.icon-font-location:before {
+    content: '[';
+}
+
+.icon-font-register:before {
+    content: ']';
+}
+
+.icon-font-form:before {
+    content: '\\';
+}
+
+.icon-font-play:before {
+    content: 'a';
+}
+
+.icon-font-alarm-clock:before {
+    content: 's';
+}
+
+.icon-font-bell:before {
+    content: 'd';
+}
+
+.icon-font-info:before {
+    content: 'f';
+}
+
+.icon-font-question:before {
+    content: 'g';
+}
+
+.icon-font-exclamation:before {
+    content: 'h';
+}
+
+.icon-font-parking:before {
+    content: 'j';
+}
+
+.icon-font-plus:before {
+    content: 'k';
+}
+
+.icon-font-minus:before {
+    content: 'l';
+}
+
+.icon-font-x:before {
+    content: ';';
+}
+
+.icon-font-check:before {
+    content: '\'';
+}
+
+.icon-font-bullet-arrow:before {
+    content: 'z';
+}
+
+.icon-font-bullet-circle:before {
+    content: 'x';
+}
+
+.icon-font-arrow-triple:before {
+    content: 'c';
+}
+
+.icon-font-arrow-double:before {
+    content: 'v';
+}
+
+.icon-font-arrow-single:before {
+    content: 'b';
+}
+
+.icon-font-arrow-left:before {
+    content: 'n';
+}
+
+.icon-font-arrow-up:before {
+    content: 'm';
+}
+
+.icon-font-arrow-down:before {
+    content: ',';
+}
+
+.icon-font-arrow-double-large:before {
+    content: '.';
+}
+
+.icon-font-logo-shield:before {
+    content: '/';
+}
+
+.icon-font-person:before {
+    content: '~';
+}
+
+.icon-font-people:before {
+    content: '!';
+}
+
+.icon-font-community:before {
+    content: '@';
+}
+
+.icon-font-megaphone:before {
+    content: '#';
+}
+
+.icon-font-school:before {
+    content: '$';
+}
+
+.icon-font-flag:before {
+    content: '%';
+}
+
+.icon-font-dollar:before {
+    content: '^';
+}
+
+.icon-font-id-badge:before {
+    content: '&';
+}
+
+.icon-font-thumbs-up:before {
+    content: '*';
+}
+
+.icon-font-chat:before {
+    content: '(';
+}
+
+.icon-font-grad-cap:before {
+    content: ')';
+}
+
+.icon-font-certificate:before {
+    content: '_';
+}
+
+.icon-font-ribbon:before {
+    content: '+';
+}
+
+.icon-font-speaker:before {
+    content: 'Q';
+}
+
+.icon-font-globe:before {
+    content: 'W';
+}
+
+.icon-font-computer:before {
+    content: 'E';
+}
+
+.icon-font-happy:before {
+    content: 'R';
+}
+
+.icon-font-trophy:before {
+    content: 'T';
+}
+
+.icon-font-quote:before {
+    content: 'Y';
+}
+
+.icon-font-clock:before {
+    content: 'U';
+}
+
+.icon-font-star:before {
+    content: 'I';
+}
+
+.icon-font-innovation:before {
+    content: 'O';
+}
+
+.icon-font-briefcase:before {
+    content: 'P';
+}
+
+.icon-font-wrench:before {
+    content: '{';
+}
+
+.icon-font-institute:before {
+    content: '}';
+}
+
+.icon-font-book:before {
+    content: '|';
+}
+
+.icon-font-clipboard:before {
+    content: 'A';
+}
+
+.icon-font-edit:before {
+    content: 'S';
+}
+
+.icon-font-document:before {
+    content: 'D';
+}
+
+.icon-font-download:before {
+    content: 'F';
+}
+
+.icon-font-upload:before {
+    content: 'G';
+}
+
+.icon-font-heart:before {
+    content: 'H';
+}
+
+.icon-font-intramural:before {
+    content: 'J';
+}
+
+.icon-font-weight:before {
+    content: 'K';
+}
+
+.icon-font-athletics:before {
+    content: 'L';
+}
+
+.icon-font-wellness:before {
+    content: ':';
+}
+
+.icon-font-word:before {
+    content: 'Z';
+}
+
+.icon-font-powerpoint:before {
+    content: 'X';
+}
+
+.icon-font-excel:before {
+    content: 'C';
+}
+
+.icon-font-pdf:before {
+    content: 'V';
+}
+
+.icon-font-snapchat:before {
+    content: 'B';
+}
+
+.icon-font-facebook:before {
+    content: 'N';
+}
+
+.icon-font-twitter:before {
+    content: 'M';
+}
+
+.icon-font-youtube:before {
+    content: '<';
+}
+
+.icon-font-linkedin:before {
+    content: '?';
+}
+
+.icon-font-instagram:before {
+    content: '>';
+}
+
+.icon-font-twitter-x {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'XIcon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Xlogo:before {
+    content: "\e900";
+}
+
