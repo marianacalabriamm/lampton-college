@@ -36,7 +36,12 @@ button.btn-white:not(:hover) > span[class*="arrow-double-large"]:after {
   color: unset !important; /* same as in global styles */
 }
 
-html .btn-custom {
-    padding-top: 8px;
-    padding-bottom: 8px;
+html .btn.btn-custom {
+    padding: 0.5rem 1.375rem;
+    font-size: 1.125rem;
+}
+
+html .btn.btn-custom .icon-font-outline {
+    top: 1px;
+    font-size: 1.375rem;
 }
