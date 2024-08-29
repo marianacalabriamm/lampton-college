@@ -1,5 +1,103 @@
+.stat-block-section {
+  background-color: #00446b;
+}
 
+.stat-block-section .stat-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  flex-direction: column;
+}
 
-.stat-block {
-    background-color: #00446B;
+.stat-block-section .first-col h2 {
+  font-size: 40px;
+  line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: "Weissenhof-Grotesk-Regular", "Georgia", serif;
+}
+
+.stat-block-section .first-col p {
+  color: #fff;
+  font-family: "Weissenhof-Grotesk-Medium", "Georgia", serif;
+}
+
+.stat-block-section .second-col {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.stat-block-section .second-col > div {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0;
+}
+
+.stat-block-section .second-col > div:nth-child(1) {
+  border-top-left-radius: 20px;
+}
+
+.stat-block-section .second-col > div:nth-child(2) {
+  border-top-right-radius: 20px;
+}
+
+.stat-block-section .second-col > div:nth-child(3) {
+  border-bottom-left-radius: 20px;
+}
+
+.stat-block-section .second-col > div:nth-child(4) {
+  border-bottom-right-radius: 20px;
+}
+
+.stat-block-section .second-col h2 {
+  color: #0076a8;
+  font-size: 72px;
+  line-height: 82px;
+  margin: 0;
+}
+
+.stat-block-section .second-col h3 {
+  color: #00446b;
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0;
+  font-family: "Weissenhof-Grotesk-Regular", "Georgia", serif;
+}
+
+.stat-block-section .stat-block-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 576px) {
+  .stat-block-section .second-col {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .stat-block-section .stat-block-btns {
+    column-gap: 30px;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  .stat-block-section .stat-block {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    flex-direction: row;
+    gap: 60px;
+  }
+  .stat-block-section .first-col {
+    max-width: 360px;
+  }
 }
