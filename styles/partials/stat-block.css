@@ -11,6 +11,15 @@
   flex-direction: column;
 }
 
+.stat-block-section .first-col h3 {
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #fff;
+  display: none;
+}
+
 .stat-block-section .first-col h2 {
   font-size: 40px;
   line-height: 48px;
@@ -74,9 +83,17 @@
   font-family: "Weissenhof-Grotesk-Regular", "Georgia", serif;
 }
 
+.stat-block-section .second-col p {
+  color: #00446b;
+  margin-top: 28px;
+  margin-bottom: 0;
+}
+
 .stat-block-section .stat-block-btns {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 30px;
 }
 
 @media (min-width: 576px) {
@@ -85,8 +102,10 @@
     grid-template-rows: repeat(2, 1fr);
   }
   .stat-block-section .stat-block-btns {
-    column-gap: 30px;
     justify-content: flex-start;
+  }
+  .stat-block-section .first-col h3 {
+    display: block;
   }
 }
 
@@ -99,5 +118,9 @@
   }
   .stat-block-section .first-col {
     max-width: 360px;
+  }
+  .stat-block-section .stat-block-btns {
+    column-gap: 18px;
+    justify-content: space-between;
   }
 }
