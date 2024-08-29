@@ -37,7 +37,7 @@ button.btn-white:not(:hover) > span[class*="arrow-double-large"]:after {
 }
 
 html .btn.btn-custom {
-    padding: 0.5rem 1.375rem;
+    padding: 0.5rem 1.25rem;
     font-size: 1.125rem;
 }
 
