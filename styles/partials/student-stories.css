@@ -1,0 +1,108 @@
+:root {
+  --dark-blue: #00446B;
+  --light-blue: #CDE9F4;
+  --blue: #0076A8;
+  --yellow: #FFD000;
+}
+
+.student-stories-section .student-stories {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.student-stories-section .student-stories-header {
+  margin-bottom: 50px; 
+}
+
+.student-stories-section .student-stories-header h2 {
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--blue);
+  margin-bottom: 30px;
+  margin-top: 0;
+  font-family: "Weissenhof-Grotesk-Regular", "Georgia", serif;
+}
+
+.student-stories-section .student-stories-header h5 {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  margin: 0;
+}
+
+.student-stories-section .student-story-card {
+  display: flex;
+  column-gap: 30px;
+  background-color: var(--dark-blue);
+}
+
+.student-stories-section .student-story-card:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.student-stories-section .student-story-card:nth-child(even) {
+  border-top-right-radius: 1.25rem;
+}
+
+.student-stories-section .student-story-card:nth-child(odd) {
+  border-bottom-left-radius: 1.25rem;
+  flex-direction: row-reverse;
+}
+
+.student-stories-section .student-story-card .student-stories-card-image {
+  width: 283px;
+  background-image: url("../../assets/images/student1.png");
+  background-size: cover;
+  background-position: center 30%;
+  height: auto;
+}
+
+
+.student-stories-section > .student-story-card:last-of-type .student-stories-card-image {
+  background-image: url("../../assets/images/student2.png");
+}
+
+
+.student-stories-section .student-story-card .student-story-card-content {
+  padding: 30px;
+  flex: 1;
+  color: #fff;
+}
+
+.student-stories-section .student-story-card .student-story-card-content p {
+  margin-bottom: 0;
+}
+
+/* Variation 1 */
+.student-stories-section.student-stories-section-layout-1 {
+  background-color: var(--dark-blue);
+}
+
+.student-stories-section.student-stories-section-layout-1 .student-story-card {
+  background-color: var(--light-blue);
+}
+
+.student-stories-section.student-stories-section-layout-1 .student-story-card .student-story-card-content img {
+  filter: brightness(0) saturate(100%) invert(24%) sepia(100%) saturate(1442%) hue-rotate(174deg) brightness(102%) contrast(101%);
+}
+
+.student-stories-section.student-stories-section-layout-1 .student-stories-header h2,
+.student-stories-section.student-stories-section-layout-1 .student-stories-header h5 {
+  color: #fff;
+}
+
+.student-stories-section.student-stories-section-layout-1 .student-story-card .student-story-card-content {
+  color: #000;
+}
+
+/* media queries */
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 992px) {
+  .student-stories-section .student-stories {
+    padding-top: 2.813rem;
+    padding-bottom: 2.813rem;
+  }
+}
