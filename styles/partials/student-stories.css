@@ -32,36 +32,30 @@
 
 .student-stories-section .student-story-card {
   display: flex;
-  column-gap: 30px;
   background-color: var(--dark-blue);
+  flex-direction: column-reverse;
 }
 
 .student-stories-section .student-story-card:not(:last-child) {
   margin-bottom: 50px;
 }
 
-.student-stories-section .student-story-card:nth-child(even) {
+.student-stories-section .student-story-card:nth-child(even),
+.student-stories-section .student-story-card:nth-child(odd) {
   border-top-right-radius: 1.25rem;
 }
 
-.student-stories-section .student-story-card:nth-child(odd) {
-  border-bottom-left-radius: 1.25rem;
-  flex-direction: row-reverse;
-}
-
 .student-stories-section .student-story-card .student-stories-card-image {
-  width: 283px;
+  width: 100%;
   background-image: url("../../assets/images/student1.png");
   background-size: cover;
-  background-position: center 30%;
-  height: auto;
+  background-position: center 10%;
+  height: 162px;
 }
 
-
-.student-stories-section > .student-story-card:last-of-type .student-stories-card-image {
+.student-stories-section .student-story-card:last-of-type .student-stories-card-image {
   background-image: url("../../assets/images/student2.png");
 }
-
 
 .student-stories-section .student-story-card .student-story-card-content {
   padding: 30px;
@@ -71,6 +65,28 @@
 
 .student-stories-section .student-story-card .student-story-card-content p {
   margin-bottom: 0;
+}
+
+.student-stories-section .student-story-card .student-story-card-content > img {
+  margin-bottom: 28px;
+}
+
+.student-stories-section .student-story-card .student-story-card-content .student-story-quote {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 28px;
+  font-family: "Weissenhof-Grotesk-Medium", "Georgia", serif;
+}
+
+.student-stories-section .student-story-card .student-story-card-content .student-story-author {
+  font-size: 20px;
+  line-height: 27px;
+  font-family: "Weissenhof-Grotesk-Medium", "Georgia", serif;
+}
+
+.student-stories-section .student-story-card .student-story-card-content .student-story-course {
+  font-size: 18px;
+  line-height: 26px;
 }
 
 /* Variation 1 */
@@ -97,7 +113,21 @@
 
 /* media queries */
 @media (min-width: 576px) {
-
+  .student-stories-section .student-story-card {
+    flex-direction: row;
+  }
+  .student-stories-section .student-story-card:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  .student-stories-section .student-story-card .student-stories-card-image {
+    width: 283px;
+    height: auto;
+    background-position: center 30%;
+  }
+  .student-stories-section .student-story-card:nth-child(odd) {
+    border-bottom-left-radius: 1.25rem;
+    border-top-right-radius: 0;
+  }
 }
 
 @media (min-width: 992px) {
