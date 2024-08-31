@@ -11,21 +11,21 @@
 }
 
 .student-stories-section .student-stories-header {
-  margin-bottom: 50px; 
+  margin-bottom: 3.125rem; 
 }
 
 .student-stories-section .student-stories-header h2 {
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 2.5rem;
+  line-height: 3rem;
   color: var(--blue);
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   margin-top: 0;
   font-family: "Weissenhof-Grotesk-Regular", "Georgia", serif;
 }
 
 .student-stories-section .student-stories-header h5 {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
   color: #000;
   margin: 0;
 }
@@ -37,7 +37,7 @@
 }
 
 .student-stories-section .student-story-card:not(:last-child) {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .student-stories-section .student-story-card:nth-child(even),
@@ -50,7 +50,7 @@
   background-image: url("../../assets/images/student1.png");
   background-size: cover;
   background-position: center 10%;
-  height: 162px;
+  height: 10.125rem;
 }
 
 .student-stories-section .student-story-card:last-of-type .student-stories-card-image {
@@ -58,7 +58,7 @@
 }
 
 .student-stories-section .student-story-card .student-story-card-content {
-  padding: 30px;
+  padding: 1.875rem;
   flex: 1;
   color: #fff;
 }
@@ -68,25 +68,25 @@
 }
 
 .student-stories-section .student-story-card .student-story-card-content > img {
-  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
 }
 
 .student-stories-section .student-story-card .student-story-card-content .student-story-quote {
-  font-size: 18px;
-  line-height: 26px;
-  margin-bottom: 28px;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  margin-bottom: 1.75rem;
   font-family: "Weissenhof-Grotesk-Medium", "Georgia", serif;
 }
 
 .student-stories-section .student-story-card .student-story-card-content .student-story-author {
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 1.25rem;
+  line-height: 1.688rem;
   font-family: "Weissenhof-Grotesk-Medium", "Georgia", serif;
 }
 
 .student-stories-section .student-story-card .student-story-card-content .student-story-course {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
 }
 
 /* Variation 1 */
@@ -120,7 +120,7 @@
     flex-direction: row-reverse;
   }
   .student-stories-section .student-story-card .student-stories-card-image {
-    width: 283px;
+    width: 17.75rem;
     height: auto;
     background-position: center 30%;
   }
