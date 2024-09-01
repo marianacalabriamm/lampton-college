@@ -14,17 +14,10 @@
 }
 
 .student-stories-section .student-stories-header h2 {
-  font-size: 2.5rem;
-  line-height: 3rem;
   color: var(--blue);
-  margin-bottom: 1.875rem;
-  margin-top: 0;
-  font-family: "Weissenhof-Grotesk-Regular", "Georgia", serif;
 }
 
 .student-stories-section .student-stories-header h5 {
-  font-size: 1.125rem;
-  line-height: 1.625rem;
   color: #000;
   margin: 0;
 }
@@ -71,10 +64,7 @@
 }
 
 .student-stories-section .student-story-card .student-story-card-content .student-story-quote {
-  font-size: 1.125rem;
-  line-height: 1.625rem;
   margin-bottom: 1.75rem;
-  font-family: "Weissenhof-Grotesk-Medium", "Georgia", serif;
 }
 
 .student-stories-section .student-story-card .student-story-card-content .student-story-author {
