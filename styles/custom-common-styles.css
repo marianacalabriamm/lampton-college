@@ -3,7 +3,7 @@
   --yellow: #ffd000;
 }
 
-/* New button variation - white */
+/* New button variation: white - global styles */
 html .btn-white {
   background-color: #fff;
   color: #000;
@@ -44,4 +44,23 @@ html .btn.btn-custom {
 html .btn.btn-custom .icon-font-outline {
     top: 1px;
     font-size: 1.375rem;
+}
+
+/* New heading styles - global styles */
+html body .section-block h2,
+html body .section-block .like-h2{
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Weissenhof-Grotesk-Regular", "Georgia", serif;
+}
+
+html body .section-block h5,
+html body .section-block .like-h5 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Weissenhof-Grotesk-Medium", "Georgia", serif;
 }

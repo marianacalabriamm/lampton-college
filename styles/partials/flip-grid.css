@@ -1,0 +1,74 @@
+:root {
+  --dark-blue: #00446B;
+  --light-blue: #CDE9F4;
+  --blue: #0076A8;
+}
+
+.flip-grid-section {
+  padding: 70px 0;
+}
+
+.flip-grid-section .flip-grid-inner {
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+}
+
+.flip-grid-section .flip-grid-inner .flip-grid-img-wrapper {
+  width: 100%;
+  background-image: url("../../assets/images/flip-grid.png");
+  background-size: cover;
+  background-position: center;
+  height: 334px;
+  min-height: 334px;
+}
+
+.flip-grid-section.flip-grid-layout-blue-bg .flip-grid-inner .flip-grid-content {
+  flex: 1;
+}
+
+/* Variation: blue background */
+.flip-grid-section.flip-grid-layout-blue-bg {
+  background-color: var(--dark-blue);
+}
+
+.flip-grid-section.flip-grid-layout-blue-bg .flip-grid-inner,
+.flip-grid-section.flip-grid-layout-blue-bg .flip-grid-inner h2 {
+  color: #fff;
+}
+
+.flip-grid-section.flip-grid-layout-blue-bg .flip-grid-inner .flip-grid-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "Weissenhof-Grotesk-Medium", "Georgia", serif;
+}
+
+.flip-grid-section.flip-grid-layout-blue-bg .flip-grid-inner .flip-grid-list span {
+  font-size: 18px;
+  font-family: "Meta-Serif-Book", "Georgia", serif;
+}
+
+.flip-grid-section.flip-grid-layout-blue-bg .flip-grid-inner p:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.flip-grid-section.flip-grid-layout-blue-bg .flip-grid-inner .flip-grid-btns {
+  display: flex;
+  column-gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* Media queries */
+@media (min-width: 576px) {
+  .flip-grid-section .flip-grid-inner .flip-grid-img-wrapper {
+    width: 524px;
+    height: auto;
+    min-height: 548px;
+  }
+}
+
+@media (min-width: 992px) {
+
+}
