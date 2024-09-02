@@ -1,0 +1,119 @@
+:root {
+  --dark-blue: #00446B;
+}
+
+.subpage-header-section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dark-blue);
+}
+
+.subpage-header-section .subpage-header-content {
+  position: relative;
+  width: auto;
+}
+
+.subpage-header-section .subpage-header-chevron {
+  display: none;
+}
+
+.subpage-header-section .subpage-header-triangle {
+  position: absolute;
+  top: 0;
+  left: 8%;
+  height: 100%;
+  aspect-ratio: 1/2;
+  -webkit-mask: linear-gradient(-90deg, #0000 calc(40px / sqrt(2)), #000 0),
+    radial-gradient(
+      40px at calc(100% - 40px * sqrt(2)) 50%,
+      #000 98%,
+      #0000 101%
+    );
+  clip-path: polygon(100% 50%, 0 100%, 0 0);
+  background-color: var(--dark-blue);
+  z-index: 2;
+}
+
+.subpage-header-section .subpage-header-triangle > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subpage-header-section .subpage-header-text {
+  z-index: 3;
+  color: #fff;
+  padding: 48px 12px;
+}
+
+.subpage-header-section .subpage-header-text p.like-h5 {
+  margin-bottom: 0;
+}
+
+.subpage-header-section .subpage-header-vertical-rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 8%;
+  background-color: var(--dark-blue);
+}
+
+/* media queries */
+@media (min-width: 576px) {
+  .subpage-header-section {
+    min-height: 468px;
+    flex-direction: row;
+    background-color: transparent;
+  }
+  .subpage-header-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 54%;
+    bottom: 0;
+    background-color: var(--dark-blue);
+  }
+  .subpage-header-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 46%;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../assets/images/hero-area.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .subpage-header-section .subpage-header-triangle {
+    left: 46%;
+    -webkit-mask: linear-gradient(-90deg, #0000 calc(80px / sqrt(2)), #000 0),
+      radial-gradient(
+        80px at calc(100% - 80px * sqrt(2)) 50%,
+        #000 98%,
+        #0000 101%
+      );
+  }
+  .subpage-header-section .subpage-header-vertical-rectangle {
+    display: none;
+  }
+  .subpage-header-section .subpage-header-chevron {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  .subpage-header-section .subpage-header-shapes {
+    min-height: 214px;
+    width: 100%;
+    position: relative;
+    background-image: url("../../assets/images/hero-area.png");
+    background-size: cover;
+    background-position: center;
+  }
+}

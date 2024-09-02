@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="styles/fonts/weissenhof-grotesk.css">
     <link rel="stylesheet" href="styles/fonts/meta-serif.css">    
 
-    <!-- Custom common styles -->
+    <!-- Custom common styles - global styles for all partials -->
     <link rel="stylesheet" href="styles/custom-common-styles.css">
+
     <!-- Custom styles for each partial -->
+    <!-- Subpage header -->
+    <link rel="stylesheet" href="styles/partials/subpage-header.css">
     <!-- Stat Block -->
     <link rel="stylesheet" href="styles/partials/stat-block.css">
     <!-- Student Stories Block -->
@@ -24,6 +27,11 @@
 </head>
 
 <body class="container-fluid"> <!-- this class is used on the Lambton site -->
+
+    <header class="row"> <!-- this class 'row' is used on the Lambton site -->
+      <div class="col-md-12 p-0" id="header"></div> <!-- these classes are used on the Lambton site -->
+    </header> 
+
     <section class="row page-content m-section" aria-label="Main page content"> <!-- these classes are used on the Lambton site -->
         <div class="col-md-12" id="custom-blocks-wrapper"></div> <!-- the class col-md-12 is used on the Lambton site -->
     </section>
@@ -41,6 +49,7 @@
             }
         }
 
+        /* loadPartial('partials/subpage-header.html', 'header'); */
         loadPartial('partials/stat-block.html', 'custom-blocks-wrapper');
         loadPartial('partials/student-stories.html', 'custom-blocks-wrapper');
         loadPartial('partials/flip-grid.html', 'custom-blocks-wrapper');
