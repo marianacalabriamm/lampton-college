@@ -47,7 +47,7 @@
 .subpage-header-section .subpage-header-text {
   z-index: 3;
   color: #fff;
-  padding: 48px 12px;
+  padding: 3rem 0.75rem;
 }
 
 .subpage-header-section .subpage-header-text p.like-h5 {
@@ -66,7 +66,7 @@
 /* media queries */
 @media (min-width: 576px) {
   .subpage-header-section {
-    min-height: 468px;
+    min-height: 29.25rem;
     flex-direction: row;
     background-color: transparent;
   }
@@ -121,7 +121,7 @@
 
 @media (max-width: 575px) {
   .subpage-header-section .subpage-header-shapes {
-    min-height: 214px;
+    min-height: 13.375rem;
     width: 100%;
     position: relative;
     background-image: url("../../assets/images/hero-area.png");
