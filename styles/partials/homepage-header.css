@@ -1,0 +1,114 @@
+:root {
+  --dark-blue: #00446B;
+  --intermediate-blue: #005485;
+}
+
+.homepage-header-section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dark-blue);
+}
+
+.homepage-header-section .homepage-header-content {
+  position: relative;
+  width: auto;
+}
+
+.homepage-header-section .homepage-header-triangle {
+  position: absolute;
+  top: 0;
+  left: 8%;
+  height: 100%;
+  aspect-ratio: 1/2;
+  -webkit-mask: linear-gradient(-90deg, #0000 calc(40px / sqrt(2)), #000 0),
+    radial-gradient(
+      40px at calc(100% - 40px * sqrt(2)) 50%,
+      #000 98%,
+      #0000 101%
+    );
+  clip-path: polygon(100% 50%, 0 100%, 0 0);
+  background-color: var(--dark-blue);
+  z-index: 2;
+}
+
+.homepage-header-section .homepage-header-text {
+  z-index: 3;
+  color: #fff;
+  padding: 3rem 0.75rem;
+}
+
+.homepage-header-section .homepage-header-text p.like-h5 {
+  margin-bottom: 0;
+}
+
+.homepage-header-section .homepage-header-vertical-rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 8%;
+  background-color: var(--dark-blue);
+}
+
+.homepage-header-section .homepage-header-btns {
+  display: flex;
+  gap: 1.125rem;
+  flex-wrap: wrap;
+}
+
+.homepage-header-section .homepage-header-details {
+  padding: 30px 0 18px 0;
+}
+
+/* media queries */
+@media (min-width: 576px) {
+  .homepage-header-section {
+    min-height: 29.25rem;
+    flex-direction: row;
+    background-color: transparent;
+  }
+  .homepage-header-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 60%;
+    bottom: 0;
+    background-color: var(--dark-blue);
+  }
+  .homepage-header-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 40%;
+    right: 0;
+    bottom: 0;
+    background-color: var(--intermediate-blue);
+  }
+  .homepage-header-section .homepage-header-triangle {
+    left: 40%;
+    -webkit-mask: linear-gradient(-90deg, #0000 calc(80px / sqrt(2)), #000 0),
+      radial-gradient(
+        80px at calc(100% - 80px * sqrt(2)) 50%,
+        #000 98%,
+        #0000 101%
+      );
+  }
+  .homepage-header-section .homepage-header-vertical-rectangle {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .homepage-header-section .homepage-header-shapes {
+    min-height: 13.375rem;
+    width: 100%;
+    position: relative;
+    background-image: url("../../assets/images/hero-area.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
