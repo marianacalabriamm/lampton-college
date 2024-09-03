@@ -107,6 +107,14 @@ html body .section-block .like-h5 {
 @media (min-width: 768px) {
   html body .section-block h1,
   html body .section-block .like-h1{
+    font-size: 3.625rem;
+    line-height: 4.375rem;
+  }
+}
+
+@media (min-width: 992px) {
+  html body .section-block h1,
+  html body .section-block .like-h1{
     font-size: 4.5rem;
     line-height: 5.125rem;
   }

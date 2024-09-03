@@ -6,15 +6,10 @@
 .homepage-header-section {
   position: relative;
   overflow: hidden;
+  background-color: var(--dark-blue);
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: var(--dark-blue);
-}
-
-.homepage-header-section .homepage-header-content {
-  position: relative;
-  width: auto;
 }
 
 .homepage-header-section .homepage-header-triangle {
@@ -63,52 +58,104 @@
   padding: 30px 0 18px 0;
 }
 
+.homepage-header-section .homepage-header-images-container {
+  display: none;
+}
+
 /* media queries */
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .homepage-header-section {
-    min-height: 29.25rem;
+    min-height: 720px;
     flex-direction: row;
-    background-color: transparent;
-  }
-  .homepage-header-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 60%;
-    bottom: 0;
-    background-color: var(--dark-blue);
-  }
-  .homepage-header-section::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 40%;
-    right: 0;
-    bottom: 0;
     background-color: var(--intermediate-blue);
   }
   .homepage-header-section .homepage-header-triangle {
-    left: 40%;
-    -webkit-mask: linear-gradient(-90deg, #0000 calc(80px / sqrt(2)), #000 0),
+    left: 15%;
+    -webkit-mask: linear-gradient(-90deg, #0000 calc(100px / sqrt(2)), #000 0),
       radial-gradient(
-        80px at calc(100% - 80px * sqrt(2)) 50%,
+        100px at calc(100% - 100px * sqrt(2)) 50%,
         #000 98%,
         #0000 101%
       );
   }
   .homepage-header-section .homepage-header-vertical-rectangle {
-    display: none;
+    width: 15%;
+  }
+
+  .homepage-header-section .homepage-header-images-container {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .homepage-header-section .homepage-header-images-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-right: 40px;
+  }
+
+  .homepage-header-section .homepage-header-image {
+    width: 275px;
+    height: 320px;
+  }
+
+  .homepage-header-section .homepage-header-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .homepage-header-section .homepage-header-content .col-md-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+  .homepage-header-section .homepage-header-content .offset-md-1 {
+    margin-left: 8.33333333%;
+  }
+  .homepage-header-section .homepage-header-content .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
   }
 }
 
-@media (max-width: 575px) {
+@media (min-width: 992px) {
+  .homepage-header-section .homepage-header-triangle {
+    left: 30%;
+  }
+  .homepage-header-section .homepage-header-vertical-rectangle {
+    width: 30%;
+  }
+  .homepage-header-section .homepage-header-images-wrapper {
+    gap: 50px;
+  }
+  .homepage-header-section {
+    min-height: 790px;
+  }
+}
+
+@media (min-width: 1580px) {
+  .homepage-header-section .homepage-header-images-wrapper {
+    justify-content: center;
+  }
+  .homepage-header-section .homepage-header-triangle {
+    left: 32%;
+  }
+  .homepage-header-section .homepage-header-vertical-rectangle {
+    width: 32%;
+  }
+}
+
+@media (max-width: 767px) {
   .homepage-header-section .homepage-header-shapes {
     min-height: 13.375rem;
     width: 100%;
     position: relative;
     background-image: url("../../assets/images/hero-area.png");
     background-size: cover;
-    background-position: center;
+    background-position: center 10%;
   }
 }
