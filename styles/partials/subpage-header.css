@@ -89,9 +89,10 @@
     background-image: url("../../assets/images/hero-area.png");
     background-size: cover;
     background-position: center 10%;
+    background-repeat: no-repeat;
   }
   .subpage-header-section .subpage-header-triangle {
-    left: 40%;
+    left: 39.9%;
     -webkit-mask: linear-gradient(-90deg, #0000 calc(80px / sqrt(2)), #000 0),
       radial-gradient(
         80px at calc(100% - 80px * sqrt(2)) 50%,
@@ -115,7 +116,7 @@
     left: 46%;
   }
   .subpage-header-section .subpage-header-triangle {
-    left: 46%;
+    left: 45.95%;
   }
 }
 
