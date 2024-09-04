@@ -1,4 +1,151 @@
+:root {
+  --dark-blue: #00446b;
+  --blue: #0076A8;
+  --turquoise: #00a8e0;
+}
+
 .callout-block {
-    padding: 2rem 0;
-    background-color: #00A8E0;
+  overflow: hidden;
+}
+
+.callout-block.callout-block-white-layout {
+  background-color: #fff;
+}
+
+.callout-block.callout-block-white-layout .callout-block-content {
+  background-color: #fff;
+}
+
+.callout-block.callout-block-white-layout h2 {
+  color: var(--dark-blue);
+}
+
+.callout-block.callout-block-white-layout p {
+  color: #000;
+}
+
+.callout-block .callout-block-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0;
+  padding-left: 0;
+  position: relative;
+  flex-direction: column;
+}
+
+.callout-block .callout-block-wrapper svg {
+  visibility: hidden;
+  position: absolute;
+}
+
+.callout-block .callout-block-right-point,
+.callout-block .callout-block-pentagon {
+  filter: url(#rounded-mask);
+  display: inline-block;
+}
+
+.callout-block .callout-block-right-point {
+  width: 100%;
+}
+
+.callout-block .callout-block-right-point::before {
+  clip-path: polygon(0% 0%, 55% 0%, 100% 50%, 55% 100%, 0% 100%);
+  background-image: url("../../assets/images/hero-area.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 75%;
+  height: 300px;
+}
+
+.callout-block .callout-block-pentagon::before {
+  background-color: var(--turquoise);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
+  width: 260px;
+}
+
+.callout-block .callout-block-right-point::before,
+.callout-block .callout-block-pentagon::before {
+  content: "";
+  display: block;
+  aspect-ratio: 3/5;
+}
+
+.callout-block .callout-block-btns {
+  display: flex;
+  gap: 1.125rem;
+  flex-wrap: wrap;
+}
+
+.callout-block .callout-block-content {
+  padding: 50px 12px;
+}
+
+
+/* Media queries */
+@media (min-width: 576px) {
+  .callout-block .callout-block-pentagon::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 70% 50%);
+    width: 370px;
+  }
+}
+
+@media (min-width: 992px) {
+  .callout-block .callout-block-wrapper {
+    align-items: center;
+    flex-direction: row;
+  }
+  .callout-block .callout-block-right-point,
+  .callout-block .callout-block-pentagon {
+    width: auto;
+  }
+  .callout-block .callout-block-right-point::before {
+    width: 440px;
+  }
+  .callout-block .callout-block-pentagon::before {
+    width: 250px;
+  }
+  .callout-block {
+    height: 774px;
+  }
+  .callout-block .callout-block-right-point::before,
+  .callout-block .callout-block-pentagon::before {
+    height: 854px;
+    margin-top: -40px;
+  }
+  .callout-block .callout-block-content {
+    margin-left: 28px;
+    padding: 0;
+  }
+  .callout-block .callout-block-content h2 {
+    max-width: 322px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .callout-block .callout-block-right-point::before {
+    width: 560px;
+  }
+  
+  .callout-block .callout-block-pentagon::before {
+    width: 370px;
+  }
+}
+
+@media (max-width: 991px) {
+  .callout-block .callout-block-pentagon {
+    position: absolute;
+    top: -40px;
+    right: -100px;
+  }
+  .callout-block .callout-block-pentagon::before {
+    height: 380px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 55% 50%);
+  }
+  .callout-block .callout-block-content {
+    z-index: 2;
+  }
+  .callout-block .callout-block-right-point::before {
+    clip-path: polygon(0% 0%, 68% 0%, 100% 50%, 68% 100%, 0% 100%);
+  }
 }

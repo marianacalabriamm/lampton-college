@@ -1,8 +1,32 @@
-<div class="callout-block row">
-  <div class="col-md-12">
-    <div class="inner-row mx-auto">
+<!-- Callout Block - Variation default: white -->
+<!-- the class 'callout-block-white-layout' is used to set the white background and text color -->
+<!-- the class 'btn-blue' is used to set the blue button -->
+<div class="section-block callout-block callout-block-white-layout p-section row">
+  <div class="callout-block-wrapper">
+    <div class="callout-block-right-point"></div>
+    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+            <filter id="rounded-mask">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="0 26" result="blur" />    
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+            </filter>
+        </defs>
+    </svg>
+    <div class="callout-block-content">
       <h2>Experience our innovative campus firsthand.</h2>
-      <p>Book a tour today and discover the opportunities that await you</p>
+      <p class="like-h5">Book a tour today and discover the opportunities that await you</p>
+      <div class="callout-block-btns">
+        <a class="btn btn-yellow d-flex align-items-center btn-custom" href="#" data-call-to-action="">
+          <span class="icon-font-outline icon-font-arrow-double-large"></span>
+          Life At Lambton
+        </a>
+        <a class="btn btn-blue d-flex align-items-center btn-custom" href="#" data-call-to-action="">
+          <span class="icon-font-outline icon-font-arrow-double-large"></span>
+          Our Campus
+        </a>
+      </div>
     </div>
+    <div class="callout-block-pentagon"></div>
   </div>
 </div>
