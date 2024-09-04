@@ -8,10 +8,7 @@
   overflow: hidden;
 }
 
-.callout-block.callout-block-white-layout {
-  background-color: #fff;
-}
-
+.callout-block.callout-block-white-layout,
 .callout-block.callout-block-white-layout .callout-block-content {
   background-color: #fff;
 }
@@ -55,13 +52,13 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 75%;
-  height: 300px;
+  height: 18.75rem;
 }
 
 .callout-block .callout-block-pentagon::before {
   background-color: var(--turquoise);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
-  width: 260px;
+  width: 16.25rem;
 }
 
 .callout-block .callout-block-right-point::before,
@@ -78,7 +75,7 @@
 }
 
 .callout-block .callout-block-content {
-  padding: 50px 12px;
+  padding: 3.125rem 0.75rem;
 }
 
 
@@ -86,7 +83,7 @@
 @media (min-width: 576px) {
   .callout-block .callout-block-pentagon::before {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 70% 50%);
-    width: 370px;
+    width: 23.125rem;
   }
 }
 
@@ -100,46 +97,46 @@
     width: auto;
   }
   .callout-block .callout-block-right-point::before {
-    width: 440px;
+    width: 27.5rem;
   }
   .callout-block .callout-block-pentagon::before {
-    width: 250px;
+    width: 15.625rem;
   }
   .callout-block {
-    height: 774px;
+    height: 48.375rem;
   }
   .callout-block .callout-block-right-point::before,
   .callout-block .callout-block-pentagon::before {
-    height: 854px;
-    margin-top: -40px;
+    height: 53.375rem;
+    margin-top: -2.5rem;
   }
   .callout-block .callout-block-content {
-    margin-left: 28px;
+    margin-left: 1.75rem;
     padding: 0;
   }
   .callout-block .callout-block-content h2 {
-    max-width: 322px;
+    max-width: 20.125rem;
   }
 }
 
 @media (min-width: 1200px) {
   .callout-block .callout-block-right-point::before {
-    width: 560px;
+    width: 35rem;
   }
   
   .callout-block .callout-block-pentagon::before {
-    width: 370px;
+    width: 23.125rem;
   }
 }
 
 @media (max-width: 991px) {
   .callout-block .callout-block-pentagon {
     position: absolute;
-    top: -40px;
-    right: -100px;
+    top: -2.5rem;
+    right: -6.25rem;
   }
   .callout-block .callout-block-pentagon::before {
-    height: 380px;
+    height: 23.75rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 55% 50%);
   }
   .callout-block .callout-block-content {
