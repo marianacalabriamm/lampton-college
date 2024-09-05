@@ -21,6 +21,16 @@
   color: #000;
 }
 
+.callout-block.callout-block-blue-layout,
+.callout-block.callout-block-blue-layout .callout-block-content {
+  background-color: var(--blue);
+}
+
+.callout-block.callout-block-blue-layout h2,
+.callout-block.callout-block-blue-layout p {
+  color: #fff;
+}
+
 .callout-block .callout-block-wrapper {
   display: flex;
   justify-content: space-between;
@@ -58,7 +68,7 @@
 .callout-block .callout-block-pentagon::before {
   background-color: var(--turquoise);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
-  width: 16.25rem;
+  width: 15rem;
 }
 
 .callout-block .callout-block-right-point::before,
