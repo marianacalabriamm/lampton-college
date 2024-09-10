@@ -95,6 +95,14 @@ html body .section-block .like-h2{
   font-family: "Weissenhof-Grotesk-Regular", "Georgia", serif;
 }
 
+html body .section-block h4,
+html body .section-block .like-h4 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  line-height: 1.688rem;
+  font-family: "Weissenhof-Grotesk-Medium", "Georgia", serif;
+}
+
 html body .section-block h5,
 html body .section-block .like-h5 {
   margin-top: 0;

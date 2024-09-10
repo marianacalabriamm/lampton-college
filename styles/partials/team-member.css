@@ -1,0 +1,45 @@
+:root {
+  --dark-blue: #00446b;
+}
+
+.team-member .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.team-member .swiper-slide {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-member .team-member-image {
+  width: 100%;
+  height: 250px;
+}
+
+.team-member .team-member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member .team-member-info {
+  color: #fff;
+  background-color: var(--dark-blue);
+  padding: 18px 30px 30px;
+}
+
+.team-member .team-member-info h4 {
+  margin-bottom: 1.125rem;
+}
+
+.team-member .team-member-info p {
+  margin-bottom: 1.125rem;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.team-member .team-member-social {
+  display: flex;
+  column-gap: 1.125rem;
+}
