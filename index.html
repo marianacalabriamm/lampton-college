@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <title>Lambton College</title>
+    <!-- Swiper styles, same one being used on Lambton website -->
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
     <!-- Lambton styles -->
     <link rel="stylesheet" href="styles/lambton.css">
     <!-- Lambton Fonts -->
@@ -28,6 +30,8 @@
     <link rel="stylesheet" href="styles/partials/flip-grid.css">
     <!-- Callout Block -->
     <link rel="stylesheet" href="styles/partials/callout-block.css">
+    <!-- Team Member Block -->
+    <link rel="stylesheet" href="styles/partials/team-member.css">
 </head>
 
 <body class="container-fluid"> <!-- this class is used on the Lambton site -->
@@ -41,6 +45,13 @@
     </section>
 
     <script>
+        function loadExternalScript(url) {
+            const script = document.createElement('script');
+            script.src = url;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+        }
+
         async function loadPartial(url, targetId) {
             const response = await fetch(url);
             const html = await response.text();
@@ -51,14 +62,25 @@
             while (tempDiv.firstChild) {
                 wrapper.appendChild(tempDiv.firstChild);
             }
+
+            // load custom scripts for specific partials
+            if (url.includes('team-member.html')) {
+                console.log('Initializing Swiper');
+                loadExternalScript('scripts/partials/team-member.js');
+            }
         }
 
+        // load partials
         loadPartial('partials/subpage-header.html', 'header');
         loadPartial('partials/homepage-header.html', 'header');
         loadPartial('partials/stat-block.html', 'custom-blocks-wrapper');
         loadPartial('partials/student-stories.html', 'custom-blocks-wrapper');
         loadPartial('partials/flip-grid.html', 'custom-blocks-wrapper');
         loadPartial('partials/callout-block.html', 'custom-blocks-wrapper');
+        loadPartial('partials/team-member.html', 'custom-blocks-wrapper');
     </script>
+    
+    <!-- Swiper JS, same one being used on Lambton website -->
+    <script src="swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
