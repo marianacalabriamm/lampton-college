@@ -6,7 +6,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <title>Lambton College</title>
     <!-- Swiper styles, same one being used on Lambton website -->
-    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="swiper/swiper-bundle.min.css"> -->
+    <!-- Lambton's website is currently using SwiperJS v.9.1.1 (2023-03-16). However, my testing has shown that the latest version (v. 11) performs better in certain scenarios. -->
+    <!-- Swiper new version -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Lambton styles -->
     <link rel="stylesheet" href="styles/lambton.css">
     <!-- Lambton Fonts -->
@@ -34,6 +37,8 @@
     <link rel="stylesheet" href="styles/partials/team-member.css">
     <!-- Contact Strip -->
     <link rel="stylesheet" href="styles/partials/contact-strip.css">
+    <!-- Student Resources -->
+    <link rel="stylesheet" href="styles/partials/student-resources.css">
 </head>
 
 <body class="container-fluid"> <!-- this class is used on the Lambton site -->
@@ -72,6 +77,9 @@
             if (url.includes('contact-strip.html')) {
                 loadExternalScript('scripts/partials/contact-strip.js');
             }
+            if (url.includes('student-resources.html')) {
+                loadExternalScript('scripts/partials/student-resources.js');
+            }
         }
 
         // load partials
@@ -83,9 +91,13 @@
         loadPartial('partials/callout-block.html', 'custom-blocks-wrapper');
         loadPartial('partials/team-member.html', 'custom-blocks-wrapper');
         loadPartial('partials/contact-strip.html', 'custom-blocks-wrapper');
+        loadPartial('partials/student-resources.html', 'custom-blocks-wrapper');
     </script>
     
     <!-- Swiper JS, same one being used on Lambton website -->
-    <script src="swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="swiper/swiper-bundle.min.js"></script> -->
+    <!-- Lambton's website is currently using SwiperJS v.9.1.1 (2023-03-16). However, my testing has shown that the latest version (v. 11) performs better in certain scenarios. -->
+    <!-- Swiper new version -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

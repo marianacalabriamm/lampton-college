@@ -6,6 +6,11 @@
     color: var(--dark-blue);
 }
 
+.team-member .team-member-header p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
 .team-member .swiper {
   width: 100%;
   height: 100%;

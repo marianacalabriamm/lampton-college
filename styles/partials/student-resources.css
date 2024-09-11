@@ -1,0 +1,77 @@
+:root {
+  --dark-blue: #00446b;
+}
+
+.student-resources .student-resources-header h5 {
+    color: var(--dark-blue);
+}
+
+.student-resources .student-resources-header p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.student-resources .student-resources-header a {
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+.student-resources .student-resources-header a:hover {
+    filter: opacity(0.9);
+}
+
+.student-resources .student-resources-image {
+  width: 100%;
+  height: 15.5rem;
+}
+
+.student-resources .student-resources-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.student-resources .student-resources-info {
+  color: #fff;
+  background-color: var(--dark-blue);
+  padding: 1.125rem 1.875rem 1.875rem;
+}
+
+.student-resources .student-resources-info h4 {
+  margin-bottom: 1.125rem;
+}
+
+.student-resources .student-resources-info p {
+  margin-bottom: 1.125rem;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  font-family: "Weissenhof-Grotesk-Medium", "Georgia", serif;
+}
+
+.student-resources .student-resources-info .student-resources-category {
+    padding: 0.5rem 0.5rem 0.625rem;
+    border: 1px solid #ade3f5;
+}
+
+.student-resources .student-resources-info .student-resources-category p {
+    line-height: 1.25rem;
+}
+
+.student-resources .student-resources-info p.student-resources-description {
+    font-family: "Weissenhof-Grotesk-Regular", "Georgia", serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.student-resources .student-resources-info .student-resources-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.student-resources .student-resources-info .student-resources-link:hover {
+    text-decoration: underline;
+}
+
+.student-resources .student-resources-info .student-resources-link img {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(26%) saturate(5245%) hue-rotate(359deg) brightness(102%) contrast(104%);
+}
