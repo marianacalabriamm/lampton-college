@@ -2,6 +2,7 @@ var swiper = new Swiper(".teamMemberSwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
+    grabCursor: true,
     pagination: {
       el: ".team-member-swiper-pagination",
       clickable: true,
