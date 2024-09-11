@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="styles/partials/callout-block.css">
     <!-- Team Member Block -->
     <link rel="stylesheet" href="styles/partials/team-member.css">
+    <!-- Contact Strip -->
+    <link rel="stylesheet" href="styles/partials/contact-strip.css">
 </head>
 
 <body class="container-fluid"> <!-- this class is used on the Lambton site -->
@@ -65,8 +67,10 @@
 
             // load custom scripts for specific partials
             if (url.includes('team-member.html')) {
-                console.log('Initializing Swiper');
                 loadExternalScript('scripts/partials/team-member.js');
+            }
+            if (url.includes('contact-strip.html')) {
+                loadExternalScript('scripts/partials/contact-strip.js');
             }
         }
 
@@ -78,6 +82,7 @@
         loadPartial('partials/flip-grid.html', 'custom-blocks-wrapper');
         loadPartial('partials/callout-block.html', 'custom-blocks-wrapper');
         loadPartial('partials/team-member.html', 'custom-blocks-wrapper');
+        loadPartial('partials/contact-strip.html', 'custom-blocks-wrapper');
     </script>
     
     <!-- Swiper JS, same one being used on Lambton website -->

@@ -127,3 +127,74 @@ html body .section-block .like-h5 {
     line-height: 5.125rem;
   }
 }
+
+/* Swiper controls: pagination & next and previous buttons */
+.section-block .swiper-button-controls {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5rem;
+    margin-top: 1.875rem;
+}
+
+.section-block .swiper-button-controls .swiper-pagination {
+    position: relative;
+    width: auto;
+}
+
+.section-block .swiper-button-controls .swiper-pagination .swiper-pagination-bullet {
+    background-color: #fff;
+    width: 1.25rem;
+    height: 1.25rem;
+    opacity: 1;
+    border: 2px solid var(--dark-blue);
+    margin-right: 0.313rem;
+    margin-left: 0.313rem;
+}
+
+.section-block .swiper-button-controls .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--dark-blue);
+}
+
+.section-block .swiper-button-controls .swiper-button-next,
+.section-block .swiper-button-controls .swiper-button-prev {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.25rem;
+    height: 1.25rem;
+    position: relative;
+}
+
+.section-block .swiper-button-controls .swiper-pagination,
+.section-block .swiper-button-controls .swiper-button-next,
+.section-block .swiper-button-controls .swiper-button-prev {
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+}
+
+.section-block .swiper-button-controls .swiper-button-next {
+    background-image: url('../assets/icons/custom-next.svg');
+}
+
+.section-block .swiper-button-controls .swiper-button-prev {
+    background-image: url('../assets/icons/custom-prev.svg');
+}
+
+.section-block .swiper-button-controls .swiper-button-next::before,
+.section-block .swiper-button-controls .swiper-button-prev::before {
+    content: none;
+}
+
+.section-block .swiper-button-controls.swiper-button-controls-inverse .swiper-pagination .swiper-pagination-bullet {
+    border: 2px solid #fff;
+}
+.section-block .swiper-button-controls.swiper-button-controls-inverse .swiper-button-next {
+    background-image: url('../assets/icons/custom-next-white.svg');
+}
+
+.section-block .swiper-button-controls.swiper-button-controls-inverse .swiper-button-prev {
+    background-image: url('../assets/icons/custom-prev-white.svg');
+}

@@ -1,0 +1,37 @@
+:root {
+    --dark-blue: #00446b;
+    --blue: #0076A8;
+}
+  
+.contact-strip .contact-strip-header h5 {
+    color: var(--blue);
+}
+
+.contact-strip .swiper {
+    width: 100%;
+}
+
+.contact-strip .contact-strip-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 20.375rem;
+}
+
+.contact-strip .contact-strip-btns {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1.875rem;
+}
+
+/* variation */
+.contact-strip.contact-strip-layout-blue-bg {
+    background-color: var(--dark-blue);
+    color: #fff;
+}
+
+.contact-strip.contact-strip-layout-blue-bg .contact-strip-header h5,
+.contact-strip.contact-strip-layout-blue-bg .contact-strip-header h2 {
+    color: #fff;
+}
