@@ -15,7 +15,7 @@
 .homepage-header-section .homepage-header-triangle {
   position: absolute;
   top: 0;
-  left: 8%;
+  left: 7.85%;
   height: 100%;
   aspect-ratio: 1/2;
   -webkit-mask: linear-gradient(-90deg, #0000 calc(40px / sqrt(2)), #000 0),
@@ -70,7 +70,7 @@
     background-color: var(--intermediate-blue);
   }
   .homepage-header-section .homepage-header-triangle {
-    left: 15%;
+    left: 14.9%;
     -webkit-mask: linear-gradient(-90deg, #0000 calc(100px / sqrt(2)), #000 0),
       radial-gradient(
         100px at calc(100% - 100px * sqrt(2)) 50%,
@@ -124,7 +124,7 @@
 
 @media (min-width: 992px) {
   .homepage-header-section .homepage-header-triangle {
-    left: 30%;
+    left: 29.9%;
   }
   .homepage-header-section .homepage-header-vertical-rectangle {
     width: 30%;
@@ -142,7 +142,7 @@
     justify-content: center;
   }
   .homepage-header-section .homepage-header-triangle {
-    left: 32%;
+    left: 31.9%;
   }
   .homepage-header-section .homepage-header-vertical-rectangle {
     width: 32%;

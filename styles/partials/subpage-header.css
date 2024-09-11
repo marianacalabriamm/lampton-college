@@ -23,7 +23,7 @@
 .subpage-header-section .subpage-header-triangle {
   position: absolute;
   top: 0;
-  left: 8%;
+  left: 7.85%;
   height: 100%;
   aspect-ratio: 1/2;
   -webkit-mask: linear-gradient(-90deg, #0000 calc(40px / sqrt(2)), #000 0),
@@ -92,7 +92,7 @@
     background-repeat: no-repeat;
   }
   .subpage-header-section .subpage-header-triangle {
-    left: 39.9%;
+    left: 39.85%;
     -webkit-mask: linear-gradient(-90deg, #0000 calc(80px / sqrt(2)), #000 0),
       radial-gradient(
         80px at calc(100% - 80px * sqrt(2)) 50%,
