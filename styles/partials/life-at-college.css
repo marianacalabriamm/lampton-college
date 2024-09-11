@@ -1,0 +1,85 @@
+:root {
+  --dark-blue: #00446b;
+  --light-blue: #cde9f4;
+}
+
+.life-college .life-college-header h5 {
+  color: var(--dark-blue);
+}
+
+.life-college .life-college-header p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 930px;
+  margin: 0 auto 48px;
+}
+
+.life-college .life-college-three-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 22px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #cde9f4;
+  border-top-left-radius: 20px;
+  column-gap: 48px;
+  flex-direction: column;
+}
+
+.life-college .life-college-text-column > div {
+  max-width: 250px;
+  margin: 0 auto 30px;
+}
+
+.life-college .life-college-text-column h3 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-family: "Weissenhof-Grotesk-Regular", "Georgia", serif;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  color: var(--dark-blue);
+}
+
+.life-college .life-college-text-column p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.life-college .life-college-image-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: -1;
+  margin-bottom: 38px;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+  .life-college .life-college-column {
+    flex: 1;
+  }
+  .life-college .life-college-text-column > div {
+    margin: 0;
+    max-width: 100%;
+  }
+  .life-college .life-college-text-column > div:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .life-college .life-college-image-column {
+    order: 0;
+    flex: 2;
+    margin-bottom: 0;
+  }
+  .life-college .life-college-three-columns {
+    flex-direction: row;
+  }
+  .life-college .life-college-image-column img {
+    min-height: 548px;
+    object-fit: cover;
+  }
+  .life-college .life-college-three-columns {
+    padding: 16px 48px;
+  }
+}

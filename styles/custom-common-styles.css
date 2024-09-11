@@ -55,22 +55,47 @@ button.btn-blue:hover > span[class*="arrow-double-large"]:after {
   color: #fff;
 }
 
+/* New button variation: dark blue - global styles */
+html .btn.btn-dark-blue {
+  background-color: var(--dark-blue);
+  color: #fff !important;
+}
+
+html .btn.btn-dark-blue:hover {
+  background-color: var(--blue);
+}
+
+html .btn.btn-dark-blue > span[class*="arrow-double-large"]:before {
+  color: var(--yellow);
+}
+
+a.btn-dark-blue:hover > span[class*="arrow-double-large"]:after,
+button.btn-dark-blue:hover > span[class*="arrow-double-large"]:after {
+  color: #fff;
+}
+
 a.btn-white:hover > span[class*="arrow-double-large"]:after,
 button.btn-white:hover > span[class*="arrow-double-large"]:after,
 a.btn-blue:hover > span[class*="arrow-double-large"]:after,
-button.btn-blue:hover > span[class*="arrow-double-large"]:after {
+button.btn-blue:hover > span[class*="arrow-double-large"]:after,
+a.btn-dark-blue:hover > span[class*="arrow-double-large"]:after,
+button.btn-dark-blue:hover > span[class*="arrow-double-large"]:after {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 a.btn-white:not(:hover) > span[class*="arrow-double-large"]:after,
 button.btn-white:not(:hover) > span[class*="arrow-double-large"]:after,
 a.btn-blue:not(:hover) > span[class*="arrow-double-large"]:after,
-button.btn-blue:not(:hover) > span[class*="arrow-double-large"]:after {
+button.btn-blue:not(:hover) > span[class*="arrow-double-large"]:after,
+a.btn-dark-blue:not(:hover) > span[class*="arrow-double-large"]:after,
+button.btn-dark-blue:not(:hover) > span[class*="arrow-double-large"]:after {
   clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
 }
 a.btn-white:not(:hover) > span[class*="arrow-double-large"]:after,
 button.btn-white:not(:hover) > span[class*="arrow-double-large"]:after,
 a.btn-blue:not(:hover) > span[class*="arrow-double-large"]:after,
-button.btn-blue:not(:hover) > span[class*="arrow-double-large"]:after {
+button.btn-blue:not(:hover) > span[class*="arrow-double-large"]:after,
+a.btn-dark-blue:not(:hover) > span[class*="arrow-double-large"]:after,
+button.btn-dark-blue:not(:hover) > span[class*="arrow-double-large"]:after {
   color: unset !important; /* same as in global styles */
 }
 
